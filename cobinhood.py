@@ -31,10 +31,6 @@ class Cobinhood:
 		if isinstance(data, dict):
 			data = urlencode(data)
 		return #signature generated
-	
-	# Account
-	def getDeviceId(self, platform):
-		return requests.post('https://api.cobinhood.com/v1/account/device', data = {'platform':platform}, verify=False)
 		
 	# User
 	def getUserInfo(self):
